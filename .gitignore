@@ -1,0 +1,11 @@
+.DS_Store
+ftpserver
+.idea
+.vscode
+debug
+__debug_bin*
+*.toml
+config.json
+users.json
+id_rsa
+id_rsa.pub

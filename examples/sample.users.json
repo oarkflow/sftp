@@ -1,0 +1,34 @@
+{
+	"testuser": {
+		"username": "testuser",
+		"password": "f15c16b99f82d8201767d3a841ff40849c8a1b812ffbfd2e393d2b6aa6682a6e",
+		"permissions": ["file.read", "file.read-content", "file.create", "file.update", "file.delete"],
+		"filesystems": [
+			{
+				"fs": "os",
+				"permissions": ["file.read", "file.read-content", "file.create", "file.update", "file.delete"],
+				"params": {
+					"base_path": ""
+				}
+			}
+		],
+		"default_filesystem": "os"
+	},
+	"user2": {
+		"username": "user2",
+		"password": "f15c16b99f82d8201767d3a841ff40849c8a1b812ffbfd2e393d2b6aa6682a6e",
+		"filesystems": [
+			{
+				"fs": "s3",
+				"permissions": ["file.read", "file.read-content", "file.create", "file.update", "file.delete"],
+				"params": {
+					"region": "us-east-1",
+					"bucket": "s3bucket",
+					"access_key": "121221312",
+					"secret": "12121212"
+				}
+			}
+		],
+		"default_filesystem": "s3"
+	}
+}
